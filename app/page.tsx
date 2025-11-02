@@ -72,7 +72,7 @@ export default function Home() {
                 <br />
                 npm run dev
               </code>
-              <p className={styles.hint}>Runs on http://localhost:5000</p>
+              <p className={styles.hint}>Runs on https://virtual-1-8hpp.onrender.com</p>
               <button
                 onClick={() => copyToClipboard("cd backend && npm run dev", "Backend")}
                 className={styles.copyBtn}
