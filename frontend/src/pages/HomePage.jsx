@@ -27,7 +27,7 @@ export default function HomePage() {
       setProducts(response.data)
     } catch (err) {
       console.error("[v0] Error fetching products:", err.message)
-      setError("Failed to load products. Make sure backend is running on http://localhost:5000")
+      setError("Failed to load products. Make sure backend is running on https://virtual-1-8hpp.onrender.com")
     } finally {
       setLoading(false)
     }
