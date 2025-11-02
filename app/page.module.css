@@ -1,0 +1,481 @@
+.main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.logoSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon {
+  font-size: 48px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1a73e8;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #5f6368;
+  font-size: 16px;
+}
+
+.section {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin: 0 0 30px;
+  font-size: 28px;
+  color: #202124;
+  border-bottom: 3px solid #1a73e8;
+  padding-bottom: 15px;
+}
+
+.section h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #202124;
+}
+
+.instructionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #1a73e8;
+  position: relative;
+}
+
+.card code {
+  display: block;
+  background: #202124;
+  color: #34a853;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+.copyBtn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.copyBtn:hover {
+  background: #1557b0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+.copyBtn:active {
+  transform: translateY(0);
+}
+
+.hint {
+  font-size: 13px;
+  color: #5f6368;
+  margin: 10px 0 0;
+}
+
+.featuresList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.featureItem:hover {
+  background: #e8eaed;
+  transform: translateY(-2px);
+}
+
+.featureIcon {
+  font-size: 28px;
+  min-width: 40px;
+}
+
+.featureItem h4 {
+  margin: 0 0 5px;
+  color: #1a73e8;
+  font-size: 16px;
+}
+
+.featureItem p {
+  margin: 0;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.codeBlock {
+  background: #202124;
+  color: #a8a8a8;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.techCard {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 4px solid #1a73e8;
+}
+
+.techCard h4 {
+  margin: 0 0 15px;
+  color: #1a73e8;
+}
+
+.techCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techCard li {
+  padding: 6px 0;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.techCard li:before {
+  content: "▸ ";
+  color: #1a73e8;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.setupSteps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step-counter;
+}
+
+.setupSteps li {
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #f8f9fa;
+  border-left: 4px solid #1a73e8;
+  border-radius: 4px;
+  counter-increment: step-counter;
+}
+
+.setupSteps li:before {
+  content: counter(step-counter);
+  display: inline-block;
+  background: #1a73e8;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.setupSteps strong {
+  display: block;
+  color: #202124;
+  margin-bottom: 5px;
+}
+
+.setupSteps p {
+  margin: 5px 0 0;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.setupSteps code {
+  background: #202124;
+  color: #34a853;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+.apiTable {
+  display: grid;
+  gap: 0;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.apiRow {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+  gap: 0;
+  padding: 15px;
+  border-bottom: 1px solid #e8eaed;
+  align-items: center;
+}
+
+.apiRow:last-child {
+  border-bottom: none;
+}
+
+.apiRow:nth-child(odd) {
+  background: #f8f9fa;
+}
+
+.apiMethod {
+  font-weight: 600;
+  color: white;
+  background: #1a73e8;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.apiPath {
+  font-family: "Courier New", monospace;
+  color: #202124;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.apiDesc {
+  color: #5f6368;
+  font-size: 13px;
+}
+
+.deploymentTabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.deploymentCard {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 4px solid #1a73e8;
+}
+
+.deploymentCard h3 {
+  margin: 0 0 15px;
+  color: #1a73e8;
+}
+
+.deploySteps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: deploy-counter;
+}
+
+.deploySteps li {
+  padding: 10px 0;
+  counter-increment: deploy-counter;
+  color: #5f6368;
+  font-size: 14px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.deploySteps li:before {
+  content: counter(deploy-counter);
+  position: absolute;
+  left: 0;
+  background: #1a73e8;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.deploySteps code {
+  background: #202124;
+  color: #34a853;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+.credentialsBox {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #34a853;
+}
+
+.credential {
+  margin-bottom: 15px;
+}
+
+.credential label {
+  display: block;
+  font-weight: 600;
+  color: #202124;
+  margin-bottom: 5px;
+}
+
+.credential code {
+  background: #202124;
+  color: #34a853;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.nextSteps {
+  list-style: decimal;
+  padding-left: 25px;
+  color: #5f6368;
+}
+
+.nextSteps li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #202124;
+}
+
+.nextSteps strong {
+  color: #1a73e8;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #5f6368;
+  margin-top: 60px;
+  border-top: 1px solid #e8eaed;
+}
+
+.footer p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #1557b0;
+  text-decoration: underline;
+}
+
+.lastSection {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .logoSection {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 36px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .instructionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .apiRow {
+    grid-template-columns: 1fr;
+  }
+
+  .apiMethod {
+    width: fit-content;
+  }
+}
