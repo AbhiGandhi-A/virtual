@@ -12,25 +12,13 @@ dotenv.config();
 const app = express();
 
 // ============================
-// ✅ CORS Configuration
+// ✅ Allow All CORS Requests
 // ============================
-const allowedOrigins = [
-  "http://localhost:5173",                      // for local dev
-  "virtual-xf5n-git-main-abhigandhi250-gmailcoms-projects.vercel.app",      // replace with your real frontend domain
-];
-
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // allow requests with no origin (like mobile apps or curl)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      } else {
-        return callback(new Error("CORS not allowed from this origin"), false);
-      }
-    },
-    credentials: true,
+    origin: "*", // 👈 allows all origins
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
