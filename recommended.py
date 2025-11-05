@@ -16,8 +16,8 @@ CORS(app)
 
 # --- CONFIGURATION (Requires Environment Variables on Render) ---
 # NOTE: The default values here should be replaced with actual secure keys
-SHOPIFY_STORE_DOMAIN = os.environ.get('SHOPIFY_STORE_DOMAIN', 'your-store-name.myshopify.com')
-SHOPIFY_STOREFRONT_TOKEN = os.environ.get('SHOPIFY_STOREFRONT_TOKEN', 'your-storefront-token')
+SHOPIFY_STORE_DOMAIN = os.environ.get('SHOPIFY_STORE_DOMAIN', 'abhi-dynamic-dreamz.myshopify.com')
+SHOPIFY_STOREFRONT_TOKEN = os.environ.get('SHOPIFY_STOREFRONT_TOKEN', '87691e8132975f1169de072e3eb0426e')
 
 # Storefront API endpoint
 SHOPIFY_GRAPHQL_URL = f"https://{SHOPIFY_STORE_DOMAIN}/api/2023-10/graphql.json"
